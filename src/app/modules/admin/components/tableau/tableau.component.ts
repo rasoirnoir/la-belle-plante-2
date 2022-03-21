@@ -16,8 +16,7 @@ export class TableauComponent implements OnInit {
   tableau!: Plant[];
   indiceChoixPlante!: string[];
   planteChoisie!: Plant;
-  
-
+  idParam!: any;
 
   constructor(private plantouneService: PlantouneService, private router:Router) {
     this.tableau = [];
@@ -37,22 +36,13 @@ export class TableauComponent implements OnInit {
 
   onChoixPlante(i : any){
  
-    console.log("coucou clic");
-    console.log("indice cliqué = " + i);
-    this.indiceChoixPlante=i;
+this.indiceChoixPlante=i;
 this.planteChoisie=this.tableau[i];
-console.log(this.planteChoisie);
-this.router.navigate(['/admin/edit'], {queryParams: {idParam : this.indiceChoixPlante} });
-
-
-
-    
+this.idParam=this.planteChoisie.id;
+console.log("indice dans le tableau est " + i + " et idPlante est " + this.idParam);
+this.router.navigate(['/admin/edit'], {queryParams: {idParam : this.idParam} });
   }
 
-  
 
-
-
- 
 
 }
