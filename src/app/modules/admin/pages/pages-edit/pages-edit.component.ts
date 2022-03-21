@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { Plant } from '../../models/plant';
 
 @Component({
-  selector: 'app-pages-edit',
-  templateUrl: './pages-edit.component.html',
-  styleUrls: ['./pages-edit.component.scss']
+	selector: 'app-pages-edit',
+	templateUrl: './pages-edit.component.html',
+	styleUrls: ['./pages-edit.component.scss'],
 })
 export class PagesEditComponent implements OnInit {
+	public editPlan!: Plant;
 
-  constructor() { }
+	constructor() {}
 
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {}
 
+	public onSumbitEditPlant(submitPlant: Plant): void {
+		console.log(submitPlant);
+	}
 }
