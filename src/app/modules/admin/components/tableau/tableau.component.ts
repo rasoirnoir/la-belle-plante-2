@@ -1,8 +1,10 @@
-import { getLocaleDateFormat } from '@angular/common';
+import { getCurrencySymbol, getLocaleDateFormat } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { PlantouneService } from 'src/app/services/plantoune.service';
 import { Plant } from '../../models/plant';
+
 
 
 @Component({
@@ -13,12 +15,11 @@ import { Plant } from '../../models/plant';
 export class TableauComponent implements OnInit {
   tableau!: Plant[];
   indiceChoixPlante!: string[];
-
-
+  planteChoisie!: Plant;
   
 
 
-  constructor(private plantouneService: PlantouneService) {
+  constructor(private plantouneService: PlantouneService, private router:Router) {
     this.tableau = [];
   }
 
@@ -39,6 +40,13 @@ export class TableauComponent implements OnInit {
     console.log("coucou clic");
     console.log("indice cliqué = " + i);
     this.indiceChoixPlante=i;
+this.planteChoisie=this.tableau[i];
+console.log(this.planteChoisie);
+this.router.navigate(['/admin/edit'], {queryParams: {idParam : this.indiceChoixPlante} });
+
+
+
+    
   }
 
   
