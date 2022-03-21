@@ -11,16 +11,21 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: PageAccueilComponent },
   { path: 'details', component: PageDetailsComponent },
-  { path: 'tableau', component: TableauComponent },
-  { path: 'account', 
-    loadChildren: () => import('./modules/account/account.module')
-    .then(m => m.AccountModule)
+  {
+    path: 'account',
+    loadChildren: () =>
+      import('./modules/account/account.module').then((m) => m.AccountModule),
   },
-  { path: '**', component: PageNotFoundComponent }
+  {
+    path: 'admin',
+    loadChildren: () =>
+      import('./modules/admin/admin.module').then((m) => m.AdminModule),
+  },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
