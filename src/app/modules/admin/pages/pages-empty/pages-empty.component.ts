@@ -11,22 +11,5 @@ import { Plant } from '../../models/plant';
 export class PagesEmptyComponent implements OnInit {
   constructor(private plantouneService: PlantouneService) {}
 
-  ngOnInit(): void {
-    // this.plantouneService
-    //   .getPlantById('952438')
-    //   .subscribe((result) => console.log(result));
-    // this.plantouneService
-    //   .createPlant(new Plant('maPlante', 200, 5, true, Category.bonzaï, '', 1))
-    //   .subscribe((response) => console.log(response));
-    // this.plantouneService
-    //   .deletePlant('cVTq7Lv')
-    //   .subscribe((response) => console.log(response));
-    // this.plantouneService.getPlantById('QAOVdIF').subscribe((plante: Plant) => {
-    //   let modPlant = plante;
-    //   modPlant.name = 'coucouc je suis une plante modifiée';
-    //   this.plantouneService
-    //     .updatePlant(modPlant)
-    //     .subscribe((response) => console.log(response));
-    // });
-  }
+  ngOnInit(): void {}
 }
