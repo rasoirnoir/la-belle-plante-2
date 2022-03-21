@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { PlantouneService } from 'src/app/services/plantoune.service';
 import { Category } from '../../models/Category';
 import { Plant } from '../../models/plant';
 @Component({
@@ -14,7 +16,7 @@ export class FormComponent implements OnInit {
 	public formulaire!: FormGroup;
 	@Output() submitted = new EventEmitter<Plant>();
 
-	constructor(private fp: FormBuilder) {}
+	constructor(private fp: FormBuilder, private plantService: PlantouneService, private router: Router) {}
 
 	ngOnInit(): void {
 		console.log('theplant', this.plant);
@@ -37,5 +39,14 @@ export class FormComponent implements OnInit {
 		console.log('Soumis: ', this.formulaire.value);
 
 		this.submitted.emit(this.formulaire.value);
+	}
+
+	public onDelete(): void {
+		// console.log('delete : ', this.plant);
+		if (this.plant.id)
+			this.plantService.deletePlant(this.plant.id).subscribe((result) => {
+				console.log(`Plant ${this.plant.id} deleted.`);
+				this.router.navigate(['/admin']);
+			});
 	}
 }
