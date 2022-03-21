@@ -12,10 +12,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 	declarations: [
 		PageAdminComponent,
 		TableauComponent,
-		FormComponent,
 		PagesNewComponent,
 		PagesEditComponent,
 		PagesEmptyComponent,
+		FormComponent,
 	],
 	imports: [CommonModule, AdminRoutingModule, ReactiveFormsModule],
 })
