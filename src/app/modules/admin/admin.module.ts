@@ -10,7 +10,19 @@ import { TableauComponent } from './components/tableau/tableau.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [PageAdminComponent, TableauComponent, FormComponent, PagesNewComponent, PagesEditComponent, PagesEmptyComponent],
-  imports: [CommonModule, AdminRoutingModule, ReactiveFormsModule],
+  declarations: [
+    TableauComponent, 
+    FormComponent, 
+    PagesNewComponent, 
+    PagesEditComponent,
+    PagesEmptyComponent,
+    TableauComponent,
+    PagesNewComponent,
+    PagesEditComponent,
+    PagesEmptyComponent,
+    PageAdminComponent,
+    FormComponent
+  ],
+  imports: [CommonModule, AdminRoutingModule, AdminModule, ReactiveFormsModule],
 })
 export class AdminModule {}
