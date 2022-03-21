@@ -9,14 +9,14 @@ import { PagesEmptyComponent } from './pages/pages-empty/pages-empty.component';
 import { TableauComponent } from './components/tableau/tableau.component';
 import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
-  declarations: [
-    PageAdminComponent,
-    TableauComponent,
-    PagesNewComponent,
-    PagesEditComponent,
-    PagesEmptyComponent,
-    FormComponent,
-  ],
-  imports: [CommonModule, AdminRoutingModule, ReactiveFormsModule],
+	declarations: [
+		PageAdminComponent,
+		TableauComponent,
+		PagesNewComponent,
+		PagesEditComponent,
+		PagesEmptyComponent,
+		FormComponent,
+	],
+	imports: [CommonModule, AdminRoutingModule, ReactiveFormsModule],
 })
 export class AdminModule {}
