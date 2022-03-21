@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: PageAccueilComponent },
   { path: 'details', component: PageDetailsComponent },
+  { path: 'tableau', component : TableauComponent},
   {
     path: 'account',
     loadChildren: () =>
@@ -25,7 +26,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-})
+
+
+ imports: [RouterModule.forRoot(routes)],
+ exports: [RouterModule],
+ })
+
 export class AppRoutingModule {}
+
+
