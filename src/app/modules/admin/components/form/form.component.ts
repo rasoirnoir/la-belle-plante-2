@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Category } from '../../models/Category';
 import { Plant } from '../../models/plant';
@@ -8,9 +8,11 @@ import { Plant } from '../../models/plant';
 	styleUrls: ['./form.component.scss'],
 })
 export class FormComponent implements OnInit {
-	public plant!: Plant;
+	@Input() plant!: Plant;
+	//public plant = new Plant();
 	public categories = Category;
 	public formulaire!: FormGroup;
+	@Output() submitted = new EventEmitter<Plant>();
 
 	constructor(private fp: FormBuilder) {}
 
@@ -25,11 +27,14 @@ export class FormComponent implements OnInit {
 			rating: [this.plant.rating],
 			id: [this.plant.id],
 		});
-		console.log(this.categories);
+
+		console.log('cat', this.categories);
 	}
 
 	public onSubmit(): void {
 		console.log('le formulaire: ', this.formulaire);
 		console.log('Soumis: ', this.formulaire.value);
+
+		this.submitted.emit(this.formulaire.value);
 	}
 }

@@ -1,5 +1,5 @@
 <div class="row d-flex flex-column justify-content-center my-3">
-	<form [formGroup]="formulaire" class="border">
+	<form [formGroup]="formulaire" (ngSubmit)="onSubmit()" class="border">
 		<div class="col-12 row justify-content-center">
 			<div class="col-8 border">
 				<img src="{{ plant.urlPicture }}" alt="" />
@@ -22,9 +22,9 @@
 		</div>
 		<div class="mb-3">
 			<label for="category" class="form-label"></label>
-			<select class="form-select" for="category" aria-label="category">
-				<option *ngFor="let category of categories | keyvalue" [value]="category">
-					{{ category }}
+			<select class="form-select" for="category" aria-label="category" formControlName="category">
+				<option *ngFor="let category of categories | keyvalue" [value]="category.key">
+					{{ category.value }}
 				</option>
 			</select>
 		</div>
