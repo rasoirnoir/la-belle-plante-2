@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { TableauComponent } from './modules/admin/components/tableau/tableau.component';
 import { PageAccueilComponent } from './pages/page-accueil/page-accueil.component';
 import { PageDetailsComponent } from './pages/page-details/page-details.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: PageAccueilComponent },
   { path: 'details', component: PageDetailsComponent },
+  { path: 'tableau', component : TableauComponent},
   {
     path: 'account',
     loadChildren: () =>
@@ -24,7 +26,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-})
+
+
+ imports: [RouterModule.forRoot(routes)],
+ exports: [RouterModule],
+ })
+
 export class AppRoutingModule {}
+
+

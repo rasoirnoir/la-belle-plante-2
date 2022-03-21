@@ -6,10 +6,9 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { PagesNewComponent } from './pages/pages-new/pages-new.component';
 import { PagesEditComponent } from './pages/pages-edit/pages-edit.component';
 import { PagesEmptyComponent } from './pages/pages-empty/pages-empty.component';
-import { ReactiveFormsModule } from '@angular/forms';
-
+import { TableauComponent } from './components/tableau/tableau.component';
 @NgModule({
-	declarations: [PageAdminComponent, FormComponent, PagesNewComponent, PagesEditComponent, PagesEmptyComponent],
-	imports: [CommonModule, AdminRoutingModule, ReactiveFormsModule],
+  declarations: [PageAdminComponent, TableauComponent, PagesNewComponent, PagesEditComponent, PagesEmptyComponent],
+  imports: [CommonModule, AdminRoutingModule],
 })
 export class AdminModule {}
