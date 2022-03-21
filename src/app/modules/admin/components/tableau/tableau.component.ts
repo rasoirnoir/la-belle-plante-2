@@ -31,7 +31,7 @@ export class TableauComponent implements OnInit {
 					plante['product_breadcrumb_label'],
 					plante['product_url_picture'],
 					0,
-					plante['product_id']
+					plante['id']
 				);
 				this.tableau.push(newPlante);
 			}
@@ -45,7 +45,7 @@ export class TableauComponent implements OnInit {
 		this.indiceChoixPlante = i;
 		this.planteChoisie = this.tableau[i];
 		this.idParam = this.planteChoisie.id;
-		//console.log(this.planteChoisie);
+		console.log(this.planteChoisie);
 		this.router.navigate([`/admin/edit/${this.idParam}`]);
 	}
 }

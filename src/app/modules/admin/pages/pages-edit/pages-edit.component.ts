@@ -9,7 +9,7 @@ import { Plant } from '../../models/plant';
 	styleUrls: ['./pages-edit.component.scss'],
 })
 export class PagesEditComponent implements OnInit {
-	public editPlan!: Plant;
+	public editPlant!: Plant;
 
 	constructor(private plantService: PlantouneService, private route: ActivatedRoute) {}
 
@@ -20,6 +20,11 @@ export class PagesEditComponent implements OnInit {
 		// });
 		let idParam = this.route.snapshot.params['idParam'];
 		console.log(idParam);
+
+		this.plantService.getPlantById(idParam).subscribe((plant: any) => {
+			this.editPlant = this.plantService.map(plant);
+			console.log(this.editPlant);
+		});
 	}
 
 	public onSumbitEditPlant(submitPlant: Plant): void {
