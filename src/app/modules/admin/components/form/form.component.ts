@@ -8,7 +8,7 @@ import { Plant } from '../../models/plant';
 	styleUrls: ['./form.component.scss'],
 })
 export class FormComponent implements OnInit {
-	@Input() plant!: Plant;
+	@Input() plant = new Plant();
 	//public plant = new Plant();
 	public categories = Category;
 	public formulaire!: FormGroup;
@@ -17,6 +17,7 @@ export class FormComponent implements OnInit {
 	constructor(private fp: FormBuilder) {}
 
 	ngOnInit(): void {
+		console.log('theplant', this.plant);
 		this.formulaire = this.fp.group({
 			name: [this.plant.name],
 			price: [this.plant.price],
@@ -28,7 +29,7 @@ export class FormComponent implements OnInit {
 			id: [this.plant.id],
 		});
 
-		console.log('cat', this.categories);
+		//console.log('cat', this.categories);
 	}
 
 	public onSubmit(): void {
