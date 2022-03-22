@@ -1,35 +1,25 @@
 {
   "list_products": [
     {
-      "id": "952438",
-      "product_name": "Anthurium, pot D12cm",
-      "product_price": "17,50",
-      "product_instock": "disponible",
-      "product_discount_code": "",
-      "product_color": "",
-      "product_unitprice_ati": "17.50",
-      "product_unitprice_tf": "15.9",
-      "product_discount_tf": "0.00",
-      "product_discount_ati": "0.00",
-      "product_qty": 11,
-      "product_breadcrumb_label": "plantes fleuries",
-      "product_url_page": "https://www.truffaut.com/anthurium-pot-d12cm-952438.html",
-      "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0952000/952438_003.jpg",
-      "product_shipping_method": null,
-      "product_image_source": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0952000/952438_003.jpg",
-      "product_seller": "Truffaut",
-      "product_rating": 3,
-      "product_web_only": "oui"
-    },
-    {
       "id": "77390",
       "product_name": "Anthurium: Pot Ø17cm petit modèle - Coloris variables",
       "product_price": "19,99",
       "product_instock": "disponible",
-      "product_qty": 160,
+      "product_discount_code": "",
+      "product_color": "Blanc",
+      "product_unitprice_ati": "19.99",
+      "product_unitprice_tf": "18.2",
+      "product_discount_tf": "0.00",
+      "product_discount_ati": "0.00",
+      "product_qty": 16,
       "product_breadcrumb_label": "plantes fleuries",
+      "product_url_page": "https://www.truffaut.com/anthurium-pot-17cm-petit-modele-coloris-variables-77390.html",
       "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0077000/77390_010.jpg",
-      "product_rating": 3
+      "product_shipping_method": null,
+      "product_image_source": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0077000/77390_010.jpg",
+      "product_seller": "Truffaut",
+      "product_rating": 3,
+      "product_web_only": "oui"
     },
     {
       "id": "910762",
@@ -76,7 +66,7 @@
     {
       "id": "910744",
       "product_name": "Spathiphyllum 'Sweet Lauretta' Pot déco foncé D24cm",
-      "product_price": "84,99",
+      "product_price": 100.99,
       "product_instock": "disponible",
       "product_discount_code": "",
       "product_color": "",
@@ -84,7 +74,7 @@
       "product_unitprice_tf": "77.3",
       "product_discount_tf": "0.00",
       "product_discount_ati": "0.00",
-      "product_qty": 0,
+      "product_qty": 10,
       "product_breadcrumb_label": "plantes fleuries",
       "product_url_page": "https://www.truffaut.com/spathiphyllum-sweet-lauretta-pot-deco-fonce-d24cm-910744.html",
       "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910744_001.jpg",
@@ -105,7 +95,7 @@
       "product_unitprice_tf": "77.3",
       "product_discount_tf": "0.00",
       "product_discount_ati": "0.00",
-      "product_qty": 0,
+      "product_qty": 10,
       "product_breadcrumb_label": "plantes fleuries",
       "product_url_page": "https://www.truffaut.com/spathiphyllum-sweet-lauretta-pot-deco-clair-d24cm-910743.html",
       "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910743_001.jpg",
@@ -141,28 +131,18 @@
       "product_name": "Spathiphyllum 'Sweet Lauretta' pot D24cm",
       "product_price": "69,99",
       "product_instock": "disponible",
-      "product_qty": 0,
-      "product_breadcrumb_label": "plantes fleuries",
-      "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910674_001.jpg",
-      "product_rating": 3
-    },
-    {
-      "id": "801429",
-      "product_name": "Strelitzia Nicolai Cache-pot Anthracite: D.21-H.75",
-      "product_price": "64,99",
-      "product_instock": "disponible",
       "product_discount_code": "",
-      "product_color": "Blanc",
-      "product_unitprice_ati": "64.99",
-      "product_unitprice_tf": "59.1",
+      "product_color": "",
+      "product_unitprice_ati": "69.99",
+      "product_unitprice_tf": "63.6",
       "product_discount_tf": "0.00",
       "product_discount_ati": "0.00",
       "product_qty": 0,
       "product_breadcrumb_label": "plantes fleuries",
-      "product_url_page": "https://www.truffaut.com/strelitzia-nicolai-cache-pot-gris-d-21-h-75-801429.html",
-      "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0801000/801429_001.jpg",
+      "product_url_page": "https://www.truffaut.com/spathiphyllum-sweet-lauretta-pot-d24cm-910674.html",
+      "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910674_001.jpg",
       "product_shipping_method": null,
-      "product_image_source": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0801000/801429_001.jpg",
+      "product_image_source": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910674_001.jpg",
       "product_seller": "market place",
       "product_rating": 3,
       "product_web_only": "non"
@@ -634,10 +614,21 @@
       "product_name": "Jasmin arceau : d12, h40 cm, 300 boutons",
       "product_price": "10,95",
       "product_instock": "disponible",
-      "product_qty": 30,
+      "product_discount_code": "",
+      "product_color": "Blanc",
+      "product_unitprice_ati": "10.95",
+      "product_unitprice_tf": "10.0",
+      "product_discount_tf": "0.00",
+      "product_discount_ati": "0.00",
+      "product_qty": 3,
       "product_breadcrumb_label": "plantes fleuries",
+      "product_url_page": "https://www.truffaut.com/jasmin-arceau-d12-h40-cm-300-boutons-695372.html",
       "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0695000/695372_001.jpg",
-      "product_rating": 3
+      "product_shipping_method": null,
+      "product_image_source": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0695000/695372_001.jpg",
+      "product_seller": "Truffaut",
+      "product_rating": 3,
+      "product_web_only": "oui"
     },
     {
       "id": "55548",
@@ -5934,12 +5925,23 @@
     {
       "id": "910706",
       "product_name": "Cycas revoluta : cache-pot sable D21cm",
-      "product_price": 150,
+      "product_price": "74,99",
       "product_instock": "non disponible",
-      "product_qty": 10,
+      "product_discount_code": "",
+      "product_color": "",
+      "product_unitprice_ati": "74.99",
+      "product_unitprice_tf": "68.2",
+      "product_discount_tf": "0.00",
+      "product_discount_ati": "0.00",
+      "product_qty": 0,
       "product_breadcrumb_label": "palmiers dintrieur",
+      "product_url_page": "https://www.truffaut.com/cycas-revoluta-cache-pot-sable-d21cm-910706.html",
       "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910706_001.jpg",
-      "product_rating": 3
+      "product_shipping_method": null,
+      "product_image_source": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910706_001.jpg",
+      "product_seller": "Truffaut",
+      "product_rating": 3,
+      "product_web_only": "oui"
     },
     {
       "id": "873305",
@@ -5958,6 +5960,27 @@
       "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0873000/873305_002.jpg",
       "product_shipping_method": null,
       "product_image_source": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0873000/873305_002.jpg",
+      "product_seller": "Truffaut",
+      "product_rating": 3,
+      "product_web_only": "oui"
+    },
+    {
+      "id": "832901",
+      "product_name": "Cycas revoluta : cache-pot blanc D21cm",
+      "product_price": "74,99",
+      "product_instock": "non disponible",
+      "product_discount_code": "",
+      "product_color": "",
+      "product_unitprice_ati": "74.99",
+      "product_unitprice_tf": "68.2",
+      "product_discount_tf": "0.00",
+      "product_discount_ati": "0.00",
+      "product_qty": 0,
+      "product_breadcrumb_label": "palmiers dintrieur",
+      "product_url_page": "https://www.truffaut.com/cycas-revoluta-cache-pot-blanc-d21cm-832901.html",
+      "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832901_001.jpg",
+      "product_shipping_method": null,
+      "product_image_source": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832901_001.jpg",
       "product_seller": "Truffaut",
       "product_rating": 3,
       "product_web_only": "oui"
@@ -6064,18 +6087,7 @@
       "id": "yK3aKkj"
     },
     {
-      "id": "M5X6di7",
-      "product_name": "",
-      "product_price": 1,
-      "product_instock": true,
-      "product_qty": 0,
-      "product_breadcrumb_label": "plantes vertes",
-      "product_url_picture": "https://picsum.photos/id/18/200/300",
-      "product_rating": 0
-<<<<<<< HEAD
-    },
-    {
-      "id": "qxf3GWy",
+      "id": "vfhKx2P",
       "product_name": "",
       "product_price": 1,
       "product_instock": true,
@@ -6085,16 +6097,29 @@
       "product_rating": 0
     },
     {
-      "id": "2sKlZYO",
-      "product_name": "Areca en vannerie D53cm",
-      "product_price": 11,
+      "id": "YgSUwAq"
+    },
+    {
+      "id": "7EYGsK-"
+    },
+    {
+      "id": "ynRi9Zz"
+    },
+    {
+      "id": "-6Gtl73"
+    },
+    {
+      "id": "Y-vnAWJ"
+    },
+    {
+      "product_name": "ouech ouech",
+      "product_price": 1,
       "product_instock": true,
-      "product_qty": 15,
+      "product_qty": 0,
       "product_breadcrumb_label": "plantes vertes",
       "product_url_picture": "https://picsum.photos/id/18/200/300",
-      "product_rating": 0
-=======
->>>>>>> 106c2d812178698ceff85fc307c7136a3667ef69
+      "product_rating": 0,
+      "id": "oUs2QSe"
     }
   ],
   "users": [
