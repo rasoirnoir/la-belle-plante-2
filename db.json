@@ -1,6 +1,27 @@
 {
   "list_products": [
     {
+      "id": "952438",
+      "product_name": "Anthurium, pot D12cm",
+      "product_price": "17,50",
+      "product_instock": "disponible",
+      "product_discount_code": "",
+      "product_color": "",
+      "product_unitprice_ati": "17.50",
+      "product_unitprice_tf": "15.9",
+      "product_discount_tf": "0.00",
+      "product_discount_ati": "0.00",
+      "product_qty": 11,
+      "product_breadcrumb_label": "plantes fleuries",
+      "product_url_page": "https://www.truffaut.com/anthurium-pot-d12cm-952438.html",
+      "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0952000/952438_003.jpg",
+      "product_shipping_method": null,
+      "product_image_source": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0952000/952438_003.jpg",
+      "product_seller": "Truffaut",
+      "product_rating": 3,
+      "product_web_only": "oui"
+    },
+    {
       "id": "77390",
       "product_name": "Anthurium: Pot Ø17cm petit modèle - Coloris variables",
       "product_price": "19,99",
@@ -12,8 +33,8 @@
     },
     {
       "id": "910762",
-      "product_name": "Anthurium elipticum 'Jungle Bush' pot déco foncé D35cm",
-      "product_price": 180,
+      "product_name": "Anthurium elipticum 'Jungle Bush' pot déco foncé D24cm",
+      "product_price": "139,99",
       "product_instock": "disponible",
       "product_discount_code": "",
       "product_color": "",
@@ -21,8 +42,8 @@
       "product_unitprice_tf": "127.3",
       "product_discount_tf": "0.00",
       "product_discount_ati": "0.00",
-      "product_qty": 10,
-      "product_breadcrumb_label": "cactus et plantes grasses",
+      "product_qty": 0,
+      "product_breadcrumb_label": "plantes fleuries",
       "product_url_page": "https://www.truffaut.com/anthurium-elipticum-jungle-bush-pot-deco-fonce-d24cm-910762.html",
       "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910762_001.jpg",
       "product_shipping_method": null,
@@ -55,7 +76,7 @@
     {
       "id": "910744",
       "product_name": "Spathiphyllum 'Sweet Lauretta' Pot déco foncé D24cm",
-      "product_price": 100.99,
+      "product_price": "84,99",
       "product_instock": "disponible",
       "product_discount_code": "",
       "product_color": "",
@@ -63,7 +84,7 @@
       "product_unitprice_tf": "77.3",
       "product_discount_tf": "0.00",
       "product_discount_ati": "0.00",
-      "product_qty": 10,
+      "product_qty": 0,
       "product_breadcrumb_label": "plantes fleuries",
       "product_url_page": "https://www.truffaut.com/spathiphyllum-sweet-lauretta-pot-deco-fonce-d24cm-910744.html",
       "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910744_001.jpg",
@@ -84,7 +105,7 @@
       "product_unitprice_tf": "77.3",
       "product_discount_tf": "0.00",
       "product_discount_ati": "0.00",
-      "product_qty": 10,
+      "product_qty": 0,
       "product_breadcrumb_label": "plantes fleuries",
       "product_url_page": "https://www.truffaut.com/spathiphyllum-sweet-lauretta-pot-deco-clair-d24cm-910743.html",
       "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910743_001.jpg",
@@ -126,9 +147,30 @@
       "product_rating": 3
     },
     {
+      "id": "801429",
+      "product_name": "Strelitzia Nicolai Cache-pot Anthracite: D.21-H.75",
+      "product_price": "64,99",
+      "product_instock": "disponible",
+      "product_discount_code": "",
+      "product_color": "Blanc",
+      "product_unitprice_ati": "64.99",
+      "product_unitprice_tf": "59.1",
+      "product_discount_tf": "0.00",
+      "product_discount_ati": "0.00",
+      "product_qty": 0,
+      "product_breadcrumb_label": "plantes fleuries",
+      "product_url_page": "https://www.truffaut.com/strelitzia-nicolai-cache-pot-gris-d-21-h-75-801429.html",
+      "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0801000/801429_001.jpg",
+      "product_shipping_method": null,
+      "product_image_source": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0801000/801429_001.jpg",
+      "product_seller": "market place",
+      "product_rating": 3,
+      "product_web_only": "non"
+    },
+    {
       "id": "801428",
       "product_name": "Strelitzia Nicolai Cache-pot Blanc : D.21-H.75",
-      "product_price": 150,
+      "product_price": "64,99",
       "product_instock": "disponible",
       "product_discount_code": "",
       "product_color": "",
@@ -388,7 +430,7 @@
       "product_unitprice_tf": "8.9",
       "product_discount_tf": "0.00",
       "product_discount_ati": "0.00",
-      "product_qty": 35,
+      "product_qty": 24,
       "product_breadcrumb_label": "plantes fleuries",
       "product_url_page": "https://www.truffaut.com/azalee-interieur-plante-25cm-pot-coloris-variables-38729.html",
       "product_url_picture": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0038000/38729_003.jpg",
@@ -5942,7 +5984,87 @@
       "product_web_only": "oui"
     },
     {
-      "id": "vfhKx2P",
+      "product_name": "new_plant",
+      "product_price": 200,
+      "product_instock": true,
+      "product_qty": 5,
+      "product_breadcrumb_label": "bonzaï",
+      "product_url_picture": "",
+      "product_rating": 1,
+      "id": "2mRYeSx"
+    },
+    {
+      "product_name": "new_plant",
+      "product_price": 200,
+      "product_instock": true,
+      "product_qty": 5,
+      "product_breadcrumb_label": "bonzaï",
+      "product_url_picture": "",
+      "product_rating": 1,
+      "id": "gpovcaT"
+    },
+    {
+      "product_name": "new_plant",
+      "product_price": 200,
+      "product_instock": true,
+      "product_qty": 5,
+      "product_breadcrumb_label": "bonzaï",
+      "product_url_picture": "",
+      "product_rating": 1,
+      "id": "XQbHKvy"
+    },
+    {
+      "product_name": "new_plant",
+      "product_price": 200,
+      "product_instock": true,
+      "product_qty": 5,
+      "product_breadcrumb_label": "bonzaï",
+      "product_url_picture": "",
+      "product_rating": 1,
+      "id": "IGN671L"
+    },
+    {
+      "product_name": "new_plant",
+      "product_price": 200,
+      "product_instock": true,
+      "product_qty": 5,
+      "product_breadcrumb_label": "bonzaï",
+      "product_url_picture": "",
+      "product_rating": 1,
+      "id": "ATbg5uV"
+    },
+    {
+      "product_name": "new_plant",
+      "product_price": 200,
+      "product_instock": true,
+      "product_qty": 5,
+      "product_breadcrumb_label": "bonzaï",
+      "product_url_picture": "",
+      "product_rating": 1,
+      "id": "OG7yiTL"
+    },
+    {
+      "product_name": "new_plant",
+      "product_price": 200,
+      "product_instock": true,
+      "product_qty": 5,
+      "product_breadcrumb_label": "bonzaï",
+      "product_url_picture": "",
+      "product_rating": 1,
+      "id": "1OkKVzG"
+    },
+    {
+      "product_name": "new_plant",
+      "product_price": 200,
+      "product_instock": true,
+      "product_qty": 5,
+      "product_breadcrumb_label": "bonzaï",
+      "product_url_picture": "",
+      "product_rating": 1,
+      "id": "yK3aKkj"
+    },
+    {
+      "id": "M5X6di7",
       "product_name": "",
       "product_price": 1,
       "product_instock": true,
@@ -5950,6 +6072,7 @@
       "product_breadcrumb_label": "plantes vertes",
       "product_url_picture": "https://picsum.photos/id/18/200/300",
       "product_rating": 0
+<<<<<<< HEAD
     },
     {
       "id": "qxf3GWy",
@@ -5970,6 +6093,8 @@
       "product_breadcrumb_label": "plantes vertes",
       "product_url_picture": "https://picsum.photos/id/18/200/300",
       "product_rating": 0
+=======
+>>>>>>> 106c2d812178698ceff85fc307c7136a3667ef69
     }
   ],
   "users": [
