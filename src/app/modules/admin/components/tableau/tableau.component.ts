@@ -1,6 +1,8 @@
+import { style } from '@angular/animations';
 import { getCurrencySymbol, getLocaleDateFormat } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { withLatestFrom } from 'rxjs';
 import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { PlantouneService } from 'src/app/services/plantoune.service';
 import { Plant } from '../../models/plant';
@@ -15,6 +17,8 @@ export class TableauComponent implements OnInit {
 	indiceChoixPlante!: string[];
 	planteChoisie!: Plant;
 	idParam!: any;
+	
+
 
 	constructor(private plantouneService: PlantouneService, private router: Router) {
 		this.tableau = [];
@@ -35,17 +39,19 @@ export class TableauComponent implements OnInit {
 				);
 				this.tableau.push(newPlante);
 			}
-			console.log(this.tableau);
+			console.log("tableau = "+ this.tableau);
 		});
 	}
 
 	onChoixPlante(i: any) {
-		console.log('coucou clic');
 		console.log('indice cliqué = ' + i);
 		this.indiceChoixPlante = i;
 		this.planteChoisie = this.tableau[i];
 		this.idParam = this.planteChoisie.id;
-		console.log(this.planteChoisie);
+		console.log("plante choisie : " + this.tableau[0]);
 		this.router.navigate([`/admin/edit/${this.idParam}`]);
+		
+		
+		
 	}
 }
