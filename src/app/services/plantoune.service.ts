@@ -15,42 +15,6 @@ export class PlantouneService {
     this.apiUrl = environment.apiUrl;
   }
 
-  /**
-   *
-   * @param plante Map une plante pour l'envoyer dans la bdd
-   * @returns
-   */
-  public map(plante: Plant): any {
-    return {
-      id: plante.id,
-      product_name: plante.name,
-      product_price: plante.price,
-      product_instock: plante.instock,
-      product_qty: plante.quantity,
-      product_breadcrumb_label: plante.category,
-      product_url_picture: plante.urlPicture,
-      product_rating: plante.rating,
-    };
-  }
-
-  /**
-   * demap une plante provenant de la bdd
-   * @param plante
-   * @returns
-   */
-  public unmap(plante: any): Plant {
-    return new Plant(
-      plante['product_name'],
-      plante['product_price'],
-      plante['product_qty'],
-      plante['product_instock'],
-      plante['product_breadcrumb_label'],
-      plante['product_url_picture'],
-      plante['product_rating'],
-      plante['id']
-    );
-  }
-
   getData(): Observable<any[]> {
     return this.httpClient.get<any[]>(`${this.apiUrl}/list_products`);
   }
@@ -74,10 +38,9 @@ export class PlantouneService {
    * Crée une nouvelle plante
    */
   createPlant(plant: Plant): Observable<any> {
-    return this.httpClient.post(
-      `${this.apiUrl}/list_products/`,
-      this.map(plant)
-    );
+    console.log('Création de la plante : ', plant);
+    const createdPlant = plant.toBddObject();
+    return this.httpClient.post(`${this.apiUrl}/list_products/`, createdPlant);
   }
 
   /**
@@ -94,9 +57,10 @@ export class PlantouneService {
    * @returns
    */
   updatePlant(plant: Plant): Observable<any> {
+    const updatedPlant = plant.toBddObject();
     return this.httpClient.patch(
       `${this.apiUrl}/list_products/${plant.id}`,
-      this.map(plant)
+      updatedPlant
     );
   }
 }
