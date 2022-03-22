@@ -6007,86 +6007,6 @@
       "product_web_only": "oui"
     },
     {
-      "product_name": "new_plant",
-      "product_price": 200,
-      "product_instock": true,
-      "product_qty": 5,
-      "product_breadcrumb_label": "bonzaï",
-      "product_url_picture": "",
-      "product_rating": 1,
-      "id": "2mRYeSx"
-    },
-    {
-      "product_name": "new_plant",
-      "product_price": 200,
-      "product_instock": true,
-      "product_qty": 5,
-      "product_breadcrumb_label": "bonzaï",
-      "product_url_picture": "",
-      "product_rating": 1,
-      "id": "gpovcaT"
-    },
-    {
-      "product_name": "new_plant",
-      "product_price": 200,
-      "product_instock": true,
-      "product_qty": 5,
-      "product_breadcrumb_label": "bonzaï",
-      "product_url_picture": "",
-      "product_rating": 1,
-      "id": "XQbHKvy"
-    },
-    {
-      "product_name": "new_plant",
-      "product_price": 200,
-      "product_instock": true,
-      "product_qty": 5,
-      "product_breadcrumb_label": "bonzaï",
-      "product_url_picture": "",
-      "product_rating": 1,
-      "id": "IGN671L"
-    },
-    {
-      "product_name": "new_plant",
-      "product_price": 200,
-      "product_instock": true,
-      "product_qty": 5,
-      "product_breadcrumb_label": "bonzaï",
-      "product_url_picture": "",
-      "product_rating": 1,
-      "id": "ATbg5uV"
-    },
-    {
-      "product_name": "new_plant",
-      "product_price": 200,
-      "product_instock": true,
-      "product_qty": 5,
-      "product_breadcrumb_label": "bonzaï",
-      "product_url_picture": "",
-      "product_rating": 1,
-      "id": "OG7yiTL"
-    },
-    {
-      "product_name": "new_plant",
-      "product_price": 200,
-      "product_instock": true,
-      "product_qty": 5,
-      "product_breadcrumb_label": "bonzaï",
-      "product_url_picture": "",
-      "product_rating": 1,
-      "id": "1OkKVzG"
-    },
-    {
-      "product_name": "new_plant",
-      "product_price": 200,
-      "product_instock": true,
-      "product_qty": 5,
-      "product_breadcrumb_label": "bonzaï",
-      "product_url_picture": "",
-      "product_rating": 1,
-      "id": "yK3aKkj"
-    },
-    {
       "id": "vfhKx2P",
       "product_name": "",
       "product_price": 1,
@@ -6098,7 +6018,7 @@
     },
     {
       "id": "0bPDaHt",
-      "product_name": "Anthurium elipticum",
+      "product_name": "Anthurium elipticum 150",
       "product_price": 100,
       "product_instock": true,
       "product_qty": 10,

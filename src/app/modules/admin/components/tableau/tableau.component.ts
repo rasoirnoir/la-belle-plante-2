@@ -40,7 +40,8 @@ export class TableauComponent implements OnInit {
 				this.tableau.push(newPlante);
 			}
 			console.log(this.tableau);
-			this.tableau.length = 20;
+			//this.tableau.length = 20;
+			this.tableau = this.tableau.reverse();
 		});
 	}
 

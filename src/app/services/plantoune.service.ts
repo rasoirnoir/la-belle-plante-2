@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject, map } from 'rxjs';
+import { Observable, Subject, map, tap } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Plant } from '../modules/admin/models/plant';
@@ -26,6 +26,7 @@ export class PlantouneService {
 
 	public refrechPlant(): void {
 		this.plantCollection$.subscribe((arrayPlant: Plant[]) => {
+			console.log('arrayPlant:', arrayPlant);
 			this.subPlantCollection$.next(arrayPlant);
 		});
 	}
@@ -95,7 +96,7 @@ export class PlantouneService {
 	 * @param plantId
 	 */
 	deletePlant(plantId: string): Observable<any> {
-		return this.httpClient.delete(`${this.apiUrl}/list_products/${plantId}`);
+		return this.httpClient.delete(`${this.apiUrl}/list_products/${plantId}`).pipe(tap(() => this.refrechPlant()));
 	}
 
 	/**
@@ -103,7 +104,7 @@ export class PlantouneService {
 	 * @param plant
 	 * @returns
 	 */
-	updatePlant(plant: Plant): Observable<any> {
-		return this.httpClient.patch(`${this.apiUrl}/list_products/${plant.id}`, this.map(plant));
+	updatePlant(plant: Plant): Observable<Plant> {
+		return this.httpClient.put<Plant>(`${this.apiUrl}/list_products/${plant.id}`, this.map(plant));
 	}
 }
