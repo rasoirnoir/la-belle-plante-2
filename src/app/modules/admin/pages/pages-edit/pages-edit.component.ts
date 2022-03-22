@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { PlantouneService } from 'src/app/services/plantoune.service';
-import { any } from 'underscore';
 import { Plant } from '../../models/plant';
 
 @Component({
@@ -22,12 +21,12 @@ export class PagesEditComponent implements OnInit {
     // 	const plantId = params.get('idParam');
     // 	console.log(params);
     // });
-    let idParam = this.route.snapshot.params['idParam'];
+    //let idParam = this.route.snapshot.params['idParam'];
     // console.log(idParam);
-    // this.route.paramMap.subscribe((param: ParamMap) => {
-    // 	const idParam = param.get('idParam');
-    // });
-    this.clickOnMe(idParam);
+    this.route.paramMap.subscribe((param: ParamMap) => {
+      const idParam = param.get('idParam');
+      this.clickOnMe(idParam);
+    });
   }
 
   public clickOnMe(idParam: any): void {

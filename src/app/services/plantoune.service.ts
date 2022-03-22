@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { Observable, Subject, map, tap } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Plant } from '../modules/admin/models/plant';
@@ -9,10 +9,28 @@ import { Plant } from '../modules/admin/models/plant';
 })
 export class PlantouneService {
   plantLiked$ = new Subject<any>();
+  public plantCollection$ = new Observable<Plant[]>();
+  public subPlantCollection$ = new Subject<Plant[]>();
   apiUrl: string;
 
   constructor(private httpClient: HttpClient) {
     this.apiUrl = environment.apiUrl;
+    this.plantCollection$ = this.httpClient
+      .get<Plant[]>(`${this.apiUrl}/list_products`)
+      .pipe(
+        map((tabObj) => {
+          return tabObj.map((obj) => {
+            return Plant.build(obj);
+          });
+        })
+      );
+  }
+
+  public refrechPlant(): void {
+    this.plantCollection$.subscribe((arrayPlant: Plant[]) => {
+      console.log('arrayPlant:', arrayPlant);
+      this.subPlantCollection$.next(arrayPlant);
+    });
   }
 
   getData(): Observable<any[]> {
@@ -25,11 +43,6 @@ export class PlantouneService {
     );
   }
 
-  /**
-   * Récupère une plante à partir de son id
-   * @param plantId
-   * @returns
-   */
   getPlantById(plantId: string): Observable<any> {
     return this.httpClient.get(`${this.apiUrl}/list_products/${plantId}`);
   }
@@ -48,7 +61,9 @@ export class PlantouneService {
    * @param plantId
    */
   deletePlant(plantId: string): Observable<any> {
-    return this.httpClient.delete(`${this.apiUrl}/list_products/${plantId}`);
+    return this.httpClient
+      .delete(`${this.apiUrl}/list_products/${plantId}`)
+      .pipe(tap(() => this.refrechPlant()));
   }
 
   /**
@@ -56,9 +71,9 @@ export class PlantouneService {
    * @param plant
    * @returns
    */
-  updatePlant(plant: Plant): Observable<any> {
+  updatePlant(plant: Plant): Observable<Plant> {
     const updatedPlant = plant.toBddObject();
-    return this.httpClient.patch(
+    return this.httpClient.patch<Plant>(
       `${this.apiUrl}/list_products/${plant.id}`,
       updatedPlant
     );
