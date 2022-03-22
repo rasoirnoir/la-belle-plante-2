@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { PlantouneService } from 'src/app/services/plantoune.service';
@@ -9,7 +9,7 @@ import { Plant } from '../../models/plant';
 	templateUrl: './form.component.html',
 	styleUrls: ['./form.component.scss'],
 })
-export class FormComponent implements OnInit {
+export class FormComponent implements OnInit, OnChanges {
 	@Input() plant = new Plant();
 	//public plant = new Plant();
 	public categories = Category;
@@ -19,6 +19,10 @@ export class FormComponent implements OnInit {
 	constructor(private fp: FormBuilder, private plantService: PlantouneService, private router: Router) {}
 
 	ngOnInit(): void {
+		//console.log('cat', this.categories);
+	}
+
+	ngOnChanges(changes: SimpleChanges): void {
 		console.log('theplant', this.plant);
 		this.formulaire = this.fp.group({
 			name: [this.plant.name],
@@ -30,8 +34,6 @@ export class FormComponent implements OnInit {
 			rating: [this.plant.rating],
 			id: [this.plant.id],
 		});
-
-		//console.log('cat', this.categories);
 	}
 
 	public onSubmit(): void {
