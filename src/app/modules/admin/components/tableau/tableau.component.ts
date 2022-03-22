@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { getCurrencySymbol, getLocaleDateFormat } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
