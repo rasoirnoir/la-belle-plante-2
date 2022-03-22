@@ -39,13 +39,13 @@ export class TableauComponent implements OnInit {
 		});
 	}
 
-	onChoixPlante(i: any) {
-		console.log('coucou clic');
-		console.log('indice cliqué = ' + i);
-		this.indiceChoixPlante = i;
-		this.planteChoisie = this.tableau[i];
-		this.idParam = this.planteChoisie.id;
-		console.log(this.planteChoisie);
-		this.router.navigate([`/admin/edit/${this.idParam}`]);
-	}
+	// onChoixPlante(i: any) {
+	// 	console.log('coucou clic');
+	// 	console.log('indice cliqué = ' + i);
+	// 	this.indiceChoixPlante = i;
+	// 	this.planteChoisie = this.tableau[i];
+	// 	this.idParam = this.planteChoisie.id;
+	// 	//	console.log(this.planteChoisie);
+	// 	this.router.navigate([`/admin/edit/${this.idParam}`]);
+	// }
 }

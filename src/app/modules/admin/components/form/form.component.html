@@ -1,57 +1,38 @@
 <div class="row d-flex flex-column justify-content-center my-3">
-  <form [formGroup]="formulaire" (ngSubmit)="onSubmit()" class="border">
-    <div class="col-12 row justify-content-center">
-      <div class="col-8 border">
-        <img src="{{ plant.urlPicture }}" alt="" />
-      </div>
-      <div class="col-4 border">
-        <button class="btn btn-danger" (click)="onDelete()">Supprimer</button>
-      </div>
-    </div>
-    <div class="mb-3">
-      <label for="name" class="form-label">Nom de la plante</label>
-      <input
-        type="text"
-        class="form-control"
-        id="name"
-        formControlName="name"
-        aria-describedby="nameOfPlant"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="price" class="form-label">Prix de la Plante</label>
-      <input type="number" formControlName="price" class="form-control" />
-    </div>
-    <div class="mb-3">
-      <label for="quantity" class="form-label">Quantites de Plante</label>
-      <input type="number" formControlName="quantity" class="form-control" />
-    </div>
-    <div class="mb-3">
-      <label for="category" class="form-label"></label>
-      <select
-        class="form-select"
-        for="category"
-        aria-label="category"
-        formControlName="category"
-      >
-        <option
-          *ngFor="let category of categories | keyvalue"
-          [value]="category.key"
-        >
-          {{ category.value }}
-        </option>
-      </select>
-    </div>
+	<form [formGroup]="formulaire" (ngSubmit)="onSubmit()" class="border">
+		<div class="col-12 row justify-content-center">
+			<div class="col-8 border">
+				<img class="h-100 w-100" src="{{ plant.urlPicture }}" alt="" />
+			</div>
+			<div class="col-4 border">
+				<button class="btn btn-danger">Suprimer</button>
+			</div>
+		</div>
+		<div class="mb-3">
+			<label for="name" class="form-label">Nom de la plante</label>
+			<input type="text" class="form-control" id="name" formControlName="name" aria-describedby="nameOfPlant" />
+		</div>
+		<div class="mb-3">
+			<label for="price" class="form-label">Prix de la Plante</label>
+			<input type="number" formControlName="price" class="form-control" />
+		</div>
+		<div class="mb-3">
+			<label for="quantity" class="form-label">Quantites de Plante</label>
+			<input type="number" formControlName="quantity" class="form-control" />
+		</div>
+		<div class="mb-3">
+			<label for="category" class="form-label"></label>
+			<select class="form-select" for="category" aria-label="category" formControlName="category">
+				<option *ngFor="let category of categories | keyvalue" [value]="category.key">
+					{{ category.value }}
+				</option>
+			</select>
+		</div>
 
-    <div class="mb-3 form-check">
-      <input
-        type="checkbox"
-        class="form-check-input"
-        name="enStock"
-        id="enStock"
-      />
-      <label for="enStock" class="form-check-label">En stock</label>
-    </div>
-    <button type="submit" class="btn btn-success">Enregistrer</button>
-  </form>
+		<div class="mb-3 form-check">
+			<input type="checkbox" class="form-check-input" name="enStock" id="enStock" />
+			<label for="enStock" class="form-check-label">En stock</label>
+		</div>
+		<button type="submit" class="btn btn-success">Enregistrer</button>
+	</form>
 </div>
