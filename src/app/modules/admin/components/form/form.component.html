@@ -2,22 +2,22 @@
 	<form [formGroup]="formulaire" (ngSubmit)="onSubmit()" class="border">
 		<div class="col-12 row justify-content-center">
 			<div class="col-8 border">
-				<img src="{{ plant.urlPicture }}" alt="" />
+				<img class="h-100 w-100" src="{{ plant.urlPicture }}" alt="" />
 			</div>
 			<div class="col-4 border">
-				<button class="btn btn-danger">Suprimer</button>
+				<button class="btn btn-danger" (click)="onDelete()">Suprimer</button>
 			</div>
 		</div>
 		<div class="mb-3">
-			<label for="name" class="form-label">Nom de la plante</label>
+			<label for="name" class="form-label">Nom</label>
 			<input type="text" class="form-control" id="name" formControlName="name" aria-describedby="nameOfPlant" />
 		</div>
 		<div class="mb-3">
-			<label for="price" class="form-label">Prix de la Plante</label>
+			<label for="price" class="form-label">Prix</label>
 			<input type="number" formControlName="price" class="form-control" />
 		</div>
 		<div class="mb-3">
-			<label for="quantity" class="form-label">Quantites de Plante</label>
+			<label for="quantity" class="form-label">Quantité</label>
 			<input type="number" formControlName="quantity" class="form-control" />
 		</div>
 		<div class="mb-3">
