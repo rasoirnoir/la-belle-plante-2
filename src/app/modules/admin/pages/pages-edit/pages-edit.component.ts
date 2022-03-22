@@ -37,6 +37,8 @@ export class PagesEditComponent implements OnInit {
 
 	public onSumbitEditPlant(submitPlant: Plant): void {
 		console.log(submitPlant);
-		this.plantService.updatePlant(submitPlant).subscribe(() => {});
+		this.plantService.updatePlant(submitPlant).subscribe(() => {
+			alert('Plante Mise à jour :)');
+		});
 	}
 }

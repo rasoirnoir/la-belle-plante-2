@@ -1,7 +1,15 @@
 h1 {
-    text-align: center;
+	text-align: center;
 }
 
-::selection{background-color: rgb(192, 228, 228);}
+.listPlant {
+	cursor: pointer;
+}
 
+.listPlant:hover {
+	background-color: aquamarine;
+}
 
+::selection {
+	background-color: rgb(192, 228, 228);
+}

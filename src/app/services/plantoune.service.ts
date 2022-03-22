@@ -9,8 +9,8 @@ import { Plant } from '../modules/admin/models/plant';
 })
 export class PlantouneService {
 	plantLiked$ = new Subject<any>();
-	public plantCollection$ = new Observable<Plant[]>();
-	public subPlantCollection$ = new Subject<Plant[]>();
+	public plantCollection$ = new Observable<Plant[]>(); // Froid
+	public subPlantCollection$ = new Subject<Plant[]>(); // Chaud
 	apiUrl: string;
 
 	constructor(private httpClient: HttpClient) {
@@ -88,7 +88,7 @@ export class PlantouneService {
 	 * Crée une nouvelle plante
 	 */
 	createPlant(plant: Plant): Observable<any> {
-		return this.httpClient.post(`${this.apiUrl}/list_products/`, this.map(plant));
+		return this.httpClient.post(`${this.apiUrl}/list_products`, this.map(plant)).pipe(tap(() => this.refrechPlant()));
 	}
 
 	/**

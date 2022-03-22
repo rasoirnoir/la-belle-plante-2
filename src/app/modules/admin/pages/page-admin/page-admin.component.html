@@ -1,10 +1,16 @@
-<div class="container row h-100 admin">
-	<h1>Espace de gestion des plantes</h1>
-	<div class="left-container col-6 border">
-		<button class="btn btn-success" routerLink="new">Ajout</button>
-		<app-tableau></app-tableau>
+<section class="row d-flex justify-content-center p-3">
+	<div class="container row my-3">
+		<div class="row head m-1">
+			<h1 class="py-2 col-10">Espace de gestion des plantes</h1>
+			<div class="col-2 text-center p-3">
+				<button class="btn btn-success col-2 w-25" routerLink="new">Ajout</button>
+			</div>
+		</div>
+		<div class="left-container col-6">
+			<app-tableau></app-tableau>
+		</div>
+		<div class="right-container col-6">
+			<router-outlet></router-outlet>
+		</div>
 	</div>
-	<div class="right-container col-6 border">
-		<router-outlet></router-outlet>
-	</div>
-</div>
+</section>

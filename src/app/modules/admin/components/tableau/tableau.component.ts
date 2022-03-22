@@ -17,33 +17,33 @@ export class TableauComponent implements OnInit {
 	indiceChoixPlante!: string[];
 	planteChoisie!: Plant;
 	idParam!: any;
-	public supAppCollection$: Subject<Plant[]>;
+	public supAppCollection$: Subject<Plant[]>; // chaud
 
 	constructor(private plantouneService: PlantouneService, private router: Router) {
 		this.tableau = [];
 		this.supAppCollection$ = this.plantouneService.subPlantCollection$;
-		this.plantouneService.refrechPlant();
+		this.plantouneService.refrechPlant(); // mise a jour du tableau
 	}
 
 	ngOnInit(): void {
-		this.plantouneService.getData().subscribe((listPlant: any[]) => {
-			for (const plante of listPlant) {
-				const newPlante = new Plant(
-					plante['product_name'],
-					plante['product_price'],
-					plante['product_qty'],
-					plante['product_instock'],
-					plante['product_breadcrumb_label'],
-					plante['product_url_picture'],
-					0,
-					plante['id']
-				);
-				this.tableau.push(newPlante);
-			}
-			console.log(this.tableau);
-			//this.tableau.length = 20;
-			this.tableau = this.tableau.reverse();
-		});
+		// this.plantouneService.getData().subscribe((listPlant: any[]) => {
+		// 	for (const plante of listPlant) {
+		// 		const newPlante = new Plant(
+		// 			plante['product_name'],
+		// 			plante['product_price'],
+		// 			plante['product_qty'],
+		// 			plante['product_instock'],
+		// 			plante['product_breadcrumb_label'],
+		// 			plante['product_url_picture'],
+		// 			0,
+		// 			plante['id']
+		// 		);
+		// 		this.tableau.push(newPlante);
+		// 	}
+		// 	console.log(this.tableau);
+		// 	//this.tableau.length = 20;
+		// 	this.tableau = this.tableau.reverse();
+		// });
 	}
 
 	// onChoixPlante(i: any) {
