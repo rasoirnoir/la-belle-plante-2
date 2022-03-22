@@ -4,12 +4,20 @@
 }
 
 h1 {text-align: center;
-	background-color: aquamarine;
+	background-color: rgb(158, 214, 170);
 	border-radius: 22px;
 }
 
-div {border-radius: 22px;}
+div {border-radius: 22px;
+}
 
 button {
 	border-radius: 18px;
+}
+
+div > div {
+	background-color: rgb(158, 214, 170);
+	width: 43vw;
+	margin: auto ;
+	margin-top: 1px;
 }

@@ -1,9 +1,7 @@
 <h1>Plantes répertoriées</h1>
 
 <div>
-	<div 
-    *ngFor="let item of tableau; let i = index" 
-    (click)="onChoixPlante(i)">
-	<p  > {{ item.name }}</p>	
+	<div *ngFor="let item of tableau" [routerLink]="['edit', item.id]">
+		{{ item.name }}
 	</div>
 </div>

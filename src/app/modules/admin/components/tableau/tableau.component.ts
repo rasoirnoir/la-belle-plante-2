@@ -2,7 +2,7 @@ import { style } from '@angular/animations';
 import { getCurrencySymbol, getLocaleDateFormat } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { withLatestFrom } from 'rxjs';
+import { Subject } from 'rxjs';
 import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { PlantouneService } from 'src/app/services/plantoune.service';
 import { Plant } from '../../models/plant';
@@ -17,11 +17,12 @@ export class TableauComponent implements OnInit {
 	indiceChoixPlante!: string[];
 	planteChoisie!: Plant;
 	idParam!: any;
-	
-
+	public supAppCollection$: Subject<Plant[]>;
 
 	constructor(private plantouneService: PlantouneService, private router: Router) {
 		this.tableau = [];
+		this.supAppCollection$ = this.plantouneService.subPlantCollection$;
+		this.plantouneService.refrechPlant();
 	}
 
 	ngOnInit(): void {
@@ -39,19 +40,18 @@ export class TableauComponent implements OnInit {
 				);
 				this.tableau.push(newPlante);
 			}
-			console.log("tableau = "+ this.tableau);
+			console.log(this.tableau);
+			this.tableau.length = 20;
 		});
 	}
 
-	onChoixPlante(i: any) {
-		console.log('indice cliqué = ' + i);
-		this.indiceChoixPlante = i;
-		this.planteChoisie = this.tableau[i];
-		this.idParam = this.planteChoisie.id;
-		console.log("plante choisie : " + this.tableau[0]);
-		this.router.navigate([`/admin/edit/${this.idParam}`]);
-		
-		
-		
-	}
+	// onChoixPlante(i: any) {
+	// 	console.log('coucou clic');
+	// 	console.log('indice cliqué = ' + i);
+	// 	this.indiceChoixPlante = i;
+	// 	this.planteChoisie = this.tableau[i];
+	// 	this.idParam = this.planteChoisie.id;
+	// 	//	console.log(this.planteChoisie);
+	// 	this.router.navigate([`/admin/edit/${this.idParam}`]);
+	// }
 }
